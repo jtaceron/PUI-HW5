@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Couch Pillow</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom style -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- For icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- For stars -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- Global Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="home.html">
+          <img id="icon" src="Images/pillow_icon.png">&nbsp; Fluff Stuff
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <!-- Custom Shopping Cart Icon -->
+            <div class="form-inline my-2 my-lg-0">
+              <a class="btn btn-success btn-sm ml-3" href="#">
+                <i class="fa fa-shopping-cart"></i> Cart
+                <span class="badge badge-light">3</span>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+    <div class="row">
+      <aside class="col-sm-5 border-right">
+        <article class="gallery-wrap"> 
+          <!-- Large Thumbnail -->
+          <div class="img-big-wrap">
+            <div> <a href="#"><img src="Images/couch_pillow1.jpg"></a></div>
+          </div> 
+          <!-- Image previews -->
+          <div class="img-small-wrap">
+            <div class="item-gallery"> <img src="Images/couch_pillow1.jpg"> </div>
+            <div class="item-gallery"> <img src="Images/couch_pillow1.jpg"> </div>
+            <div class="item-gallery"> <img src="Images/couch_pillow1.jpg"> </div>
+            <div class="item-gallery"> <img src="Images/couch_pillow1.jpg"> </div>
+          </div> 
+        </article> 
+      </aside>
+
+      <aside class="col-sm-7">
+        <article class="card-body p-5">
+          <h3 class="title mb-3">Couch Pillow</h3>
+
+          <p class="price-detail-wrap"> 
+            <span class="price h3 text-warning"> 
+              <span class="currency">US $</span><span class="num">19.99</span>
+            </span> 
+            <!-- Stars -->
+            &nbsp;
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </p> <!-- price-detail-wrap .// -->
+
+          <dl class="item-property">
+            <b>Description</b>
+            <p>Throw pillows are usually (loosely) placed on sofas or armchairs but are also frequently used on beds, day beds and floors. Throw pillows serve both an aesthetic and a functional purpose. Decorative pillows are commonly used to tie in color accents within a room, often drawing on the colors in drapes, walls or area rugs. From a functional perspective, throw pillows may provide back, neck and head support.</p>
+          </dl>
+         
+         <!-- Color options -->
+           <div class="row">    
+             <div class="col-sm-5">
+              <b>Color: </b>
+              <br>
+              <button type="button" data-toggle="tooltip" data-placement="bottom" title="After School Special" class="button color-button" style="background-color: #ffd026"></button>
+              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Morning Haze" class="button color-button" style="background-color: #cf8300"></button>
+              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Cozy Denim" class="button color-button" style="background-color: #5b42eb"></button>
+              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Rainy Day" class="button color-button" style="background-color: #0000ab"></button>
+              </div> 
+            </div> 
+
+          <!-- divider -->
+          <hr> 
+
+          <!-- Filling Options -->
+          <div class="row">
+            <div class="col-sm-5">
+              <b>Filling: </b>
+              <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary test">Duck Down</button>
+                <button type="button" class="btn btn-secondary">Hypoallergenic Poly-blend</button>
+                <button type="button" class="btn btn-secondary">Memory Foam</button>
+              </div>
+            </div> 
+          </div> 
+
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-5">
+              <b>Quantity: </b>
+              <select class="form-control form-control-sm" style="width:70px;">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+              </select>
+            </div>
+          </div>
+
+          <hr>
+          <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+          <a onclick="addToCart()" href="#" class="btn btn-lg btn-outline-primary text-uppercase"> Add to cart </a>
+          <a href="shop.html" class="btn btn-lg btn-outline-secondary text-uppercase float-right"> Continue Shopping </a>
+          </article>  
+      </aside>  
+    </div>  
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom Javascript for cart alerts and tooltips -->
+    <script src="javascript.js" type="text/javascript"></script>
+  </body>
+</html>
